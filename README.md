@@ -45,9 +45,11 @@ building different types of applications.
 - Provides cross-platform independence - .NET codes can execute on platforms
 such as Windows, Linux, macOS, Android.
 
+#### .NET Framework Architecture
 
+<img align="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNHzc8eBR6vNBR4KFUbONiWR2gInD95KZwA&s" alt=".NET Framework Architecture">
 
-**MAJOR COMPONENTS OF .NET FRAMEWORK**
+#### MAJOR COMPONENTS OF .NET FRAMEWORK
 
 1. **Common Intermediate Language (CIL)**
 ● Object-oriented, stack-based bytecode and intermediate language binary
@@ -70,3 +72,13 @@ Visual Studio is a popular IDE developed by Microsoft. It's used to develop
 Windows, web, and mobile applications.
 
 [**Download Visual Studio**](https://visualstudio.microsoft.com/)
+
+
+**C# Menu**
+================
+
+### Intro
+* [C# Basics](/Intro/)
+
+
+
