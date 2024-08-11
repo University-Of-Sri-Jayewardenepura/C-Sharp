@@ -33,3 +33,40 @@ than by specifying them textually.
 | Involved with Rapid Application Development, saving time and money.   | Need to define and use objects from the ground up, which will take considerable time compared to using components. |
 | Ideal for large-scale systems requiring high modularity, reusability, and flexibility in component deployment and updating. | Well-suited for applications where complex hierarchies and relationships exist. |
 
+## .NET
+
+**What is .NET?**
+.NET is the free, open-source, cross-platform framework for building modern
+apps and powerful cloud services.
+
+- A developer platform for building and running applications on Windows.
+- Facilitates a set of tools, libraries, and programming languages for
+building different types of applications.
+- Provides cross-platform independence - .NET codes can execute on platforms
+such as Windows, Linux, macOS, Android.
+
+
+
+**MAJOR COMPONENTS OF .NET FRAMEWORK**
+
+1. **Common Intermediate Language (CIL)**
+● Object-oriented, stack-based bytecode and intermediate language binary
+instruction set defined within the common language infrastructure
+specification.
+2. **Common Language Runtime (CLR)**
+● An execution engine
+● Provides services like garbage collection, thread management, type-safety,
+exception handling
+3. **Machine Code**
+● Used to control the central processing unit
+● Consists of machine language instructions
+
+**What is an IDE?**
+An Integrated Development Environment (IDE) is a software application that
+provides tools for developing, testing, and debugging applications.
+
+**What is Visual Studio?**
+Visual Studio is a popular IDE developed by Microsoft. It's used to develop
+Windows, web, and mobile applications.
+
+[**Download Visual Studio**](https://visualstudio.microsoft.com/)
