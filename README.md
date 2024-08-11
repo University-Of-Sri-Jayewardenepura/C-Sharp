@@ -22,6 +22,7 @@ than by specifying them textually.
     discourse.
     3. **Pragmatics**: the study of how context contributes to meaning.
 
+
 ## Component-Based vs. Object-Oriented Programming
 
 | Component-Based Programming                                           | Object-Oriented Programming                                                 |
@@ -31,3 +32,4 @@ than by specifying them textually.
 | Doesn't require you to be familiar with components' inner workings    | Need to know inherited methods, data types, and behaviors of the parent object. |
 | Involved with Rapid Application Development, saving time and money.   | Need to define and use objects from the ground up, which will take considerable time compared to using components. |
 | Ideal for large-scale systems requiring high modularity, reusability, and flexibility in component deployment and updating. | Well-suited for applications where complex hierarchies and relationships exist. |
+
