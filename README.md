@@ -1,5 +1,13 @@
 # C# used in Visual Application Programming
 
+### Intro
+* [C# Basics](/Intro/)
+  - [Introduction](./Intro/README.md)
+  - [Simple Calculator](./Intro/Calculator.cs)
+
+* [Console Applications](/Console%20Applications/)
+ 
+
 ## Introduction 
 
 - **Visual Application Programming**: Any programming language that allows the user to
@@ -72,18 +80,6 @@ Visual Studio is a popular IDE developed by Microsoft. It's used to develop
 Windows, web, and mobile applications.
 
 [**Download Visual Studio**](https://visualstudio.microsoft.com/)
-
-
-**C# Menu**
-================
-
-### Intro
-* [C# Basics](/Intro/)
-  - [Introduction](./Intro/README.md)
-  - [Simple Calculator](./Intro/Calculator.cs)
-
-* [Console Applications](/Console%20Applications/)
- 
 
 
 

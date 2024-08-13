@@ -86,7 +86,9 @@ that contains a method to calculate the sum of two numbers. The assembly for
 this code would be generated as a DLL file.
 
 
-**WHAT'S AN IDENTIFIER?**
+
+
+**What's an Identifier?**
 =====================================
 
 A name that we can assign for:
@@ -110,7 +112,7 @@ An identifier is a series of characters consisting of:
 * Case sensitive
 * Should not be a C# keyword
 
-**BEST PRACTICES IN C# NAMING CONVENTIONS**
+**Best Practices in C#, Naming Conventions**
 ==================================================
 
 ### Class, Struct, Method, Property, or Constant Field Naming
@@ -131,7 +133,7 @@ An identifier is a series of characters consisting of:
 
 * Always use meaningful and self-explanatory names for your classes, methods, and properties.
 
-**KEYWORDS IN C#**
+**Keywords in C#**
 =====================
 
 ### Reserved Words
@@ -147,3 +149,262 @@ An identifier is a series of characters consisting of:
 ### Special Meaning in Code Context
 
 * These keywords have a special meaning within the context of your code.
+
+# C# Data Types
+
+## 1. Value Data Types
+- Predefined Data Types
+  - Integer
+  - Boolean
+  - Float
+- User defined Data Types
+  - Enumerations
+  - Structure
+
+## 2. Pointer Data Type
+
+## 3. References Data Types
+- Predefined Data Types
+  - Objects
+  - Strings
+- User defined Data Types
+  - Classes
+  - Interface
+
+  # Common Data Types in C#
+
+- **int**: Represents whole numbers. 
+  - Example: `1`, `-5`, `100`
+
+- **float**: Represents single-precision floating-point numbers. 
+  - Example: `3.14F`, `-0.001F`
+
+- **double**: Represents double-precision floating-point numbers. 
+  - Example: `3.14159`, `-0.0001`
+
+- **char**: Represents a single Unicode character. 
+  - Example: `'A'`, `'z'`, `'1'`
+
+- **string**: Represents a sequence of characters. 
+  - Example: `"Hello, World!"`, `"C# Programming"`
+
+- **bool**: Represents boolean values (true or false). 
+  - Example: `true`, `false`
+
+# User Defined Data Types
+
+## Structure
+- A primitive type/value type data type.
+- Used to create a single variable related data of various data types.
+- `struct` keyword is used for structure creation.
+
+Example:
+```csharp
+using System;
+struct Novel
+{
+    public string title;
+    public string author;
+    public int bookID;
+}
+```
+
+## Enumerations
+- A special class that represents a collection of constants which are unchangeable and read-only variables.
+
+Example:
+```csharp
+enum Pressure
+{
+    Low,
+    Medium,
+    High
+}
+
+Pressure p = Pressure.Medium; // creating object from pressure enum.
+```
+
+# Variables and Literals
+
+## Variable
+- A name given to a storage area that is used to store values of various data types.
+- Each variable in C# needs to have a specific type, which determines the size and layout of the variable's memory.
+
+## Literal
+- A fixed value used by a predefined variable which cannot be modified when we are executing the program.
+- Mostly suitable for constant type variable declarations.
+
+# Declaring and Initializing Variables
+
+## Declaring a variable
+Syntax: `data_type variable_name;`
+
+Examples:
+```csharp
+int age;
+double pi;
+char grade;
+string name;
+bool isStudent;
+```
+
+## Initializing a variable
+Syntax: `data_type variable_name = value;`
+
+Examples:
+```csharp
+int age = 20;
+char grade = 'A';
+string name = "John Doe";
+bool isStudent = true;
+```
+
+# Type Conversion
+
+## Implicit conversion
+Direction: char -> int -> long -> float -> double
+
+Example:
+```csharp
+int num = 10;
+double doubleNum = num;
+```
+
+## Explicit conversion
+Direction: double -> float -> long -> int -> char
+
+Example:
+```csharp
+double pi = 3.14;
+int intPi = (int)pi;
+```
+
+## Built-in Methods for Type Conversion
+- `ToBoolean`: Converts a type to a Boolean value, where possible.
+- `ToByte`: Converts a type to a byte.
+- `ToChar`: Converts a type to a single Unicode character, if possible.
+- `ToDecimal`: Converts a floating point or integer type to a decimal type.
+- `ToDouble`: Converts a type to a double type.
+- `ToInt32`: Converts a type to a 32-bit integer.
+- `ToInt64`: Converts a type to a 64-bit integer.
+- `ToUInt16`: Converts a type to an unsigned int type.
+- `ToString`: Converts a type to a string.
+- `ToType`: Converts a type to a specified type.
+
+### Examples: Type Conversions
+```csharp
+int sum = 50;
+double height = 145.45;
+bool powerStatus = true;
+
+Console.WriteLine(Convert.ToString(sum));
+Console.WriteLine(Convert.ToDouble(sum));
+Console.WriteLine(Convert.ToInt32(height));
+Console.WriteLine(Convert.ToString(powerStatus));
+Console.WriteLine(Convert.ToUInt64(height));
+```
+
+# Variable Scope
+Scope of a variable is its lifetime in a program.
+
+- **Class level scope**: Can be accessed anywhere within the class.
+- **Method level scope**: Can be accessed within a method.
+- **Block level scope**: Can be accessed within a specific block of the program.
+
+# C# Console Input/Output
+
+## Console Input
+Console input allows a program to take input from the user through the console.
+
+Example:
+```csharp
+Console.WriteLine("Enter your name:");
+string name = Console.ReadLine();
+Console.WriteLine("Your name is: " + name);
+```
+
+## Console Output
+Console output allows the program to interact with the user by displaying information.
+
+Examples:
+```csharp
+Console.WriteLine("Hello, World!");
+Console.Write("This is my life ");
+
+Console.WriteLine("Enter your name:");
+string name = Console.ReadLine();
+Console.WriteLine("Hello, " + name);
+```
+
+# Escape Characters in C#
+
+- `\'` – Output a Single quote
+- `\"` – Output a double quote
+- `\\` – Output a Backslash
+- `\n` – Insert a newline
+- `\r` – Insert a carriage-return
+- `\t` – Insert a tab
+- `\0` – Insert a null character
+- `\b` – Insert a backspace
+- `@` - Verbatim String (Outputs same string as seen in code)
+
+# Operators in C#
+
+In C#, the operators can be divided into the following groups:
+1. Arithmetic operators
+2. Assignment operators
+3. Comparison operators
+4. Logical operators
+5. Bitwise operators
+
+The behavior of these operators is quite similar to their behavior in the C and Java languages.
+
+## Examples of Operators with Comments
+
+```csharp
+// Arithmetic Operators
+int a = 10, b = 3;
+Console.WriteLine(a + b);  // Output: 13
+Console.WriteLine(a - b);  // Output: 7
+Console.WriteLine(a * b);  // Output: 30
+Console.WriteLine(a / b);  // Output: 3 (integer division)
+Console.WriteLine(a % b);  // Output: 1 (remainder)
+
+// Assignment Operators
+int x = 5;
+x += 3;  // Equivalent to x = x + 3
+Console.WriteLine(x);  // Output: 8
+
+// Comparison Operators
+Console.WriteLine(a > b);  // Output: True
+Console.WriteLine(a == b);  // Output: False
+
+// Logical Operators
+bool p = true, q = false;
+Console.WriteLine(p && q);  // Output: False
+Console.WriteLine(p || q);  // Output: True
+Console.WriteLine(!p);  // Output: False
+
+// Bitwise Operators
+int m = 5, n = 3;
+Console.WriteLine(m & n);  // Output: 1 (bitwise AND)
+Console.WriteLine(m | n);  // Output: 7 (bitwise OR)
+Console.WriteLine(m ^ n);  // Output: 6 (bitwise XOR)
+```
+
+# Prevention of Erroneous Multiple Main Methods
+
+- One class can have a main method normally in a program.
+- The main method is considered as the entry point of execution in any program.
+
+To specify which main method to use when multiple exist, use the following command at the command prompt:
+
+```
+> csc filename.cs /main:classname
+```
+
+Where:
+- `filename` is the name of the file where the code is stored
+- `classname` is the class containing the Main method you want to use
+
+This allows you to specify which class's Main method should be used as the entry point when multiple classes in your project have a Main method.
