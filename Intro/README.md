@@ -82,3 +82,28 @@ namespace MyNamespace
 This example defines a namespace `MyNamespace` with a class `Calculator`
 that contains a method to calculate the sum of two numbers. The assembly for
 this code would be generated as a DLL file.
+
+
+**WHAT'S AN IDENTIFIER?**
+=====================================
+
+A name that we can assign for:
+
+* A class, interface, struct, delegate or enum member
+* A variable
+* A namespace
+
+An identifier is a series of characters consisting of:
+
+* Unicode letter characters
+* Decimal digit characters
+* Unicode connecting characters
+* Unicode combining characters
+* Unicode formatting characters
+
+**Characteristics:**
+
+* Should start with a letter or underscore (-)
+* Does not contain any spaces or symbols
+* Case sensitive
+* Should not be a C# keyword

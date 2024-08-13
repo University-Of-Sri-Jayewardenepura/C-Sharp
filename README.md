@@ -79,6 +79,11 @@ Windows, web, and mobile applications.
 
 ### Intro
 * [C# Basics](/Intro/)
+  - [Introduction](./Intro/README.md)
+  - [Simple Calculator](./Intro/Calculator.cs)
+
+* [Console Applications](/Console%20Applications/)
+ 
 
 
 
