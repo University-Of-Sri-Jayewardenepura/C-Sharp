@@ -1,4 +1,6 @@
-## Introduction to C#
+# Introduction to C#
+
+
 
 C# (pronounced "C sharp") is a modern, object-oriented programming language
 developed by Microsoft as part of its .NET initiative. The first version of
@@ -107,3 +109,41 @@ An identifier is a series of characters consisting of:
 * Does not contain any spaces or symbols
 * Case sensitive
 * Should not be a C# keyword
+
+**BEST PRACTICES IN C# NAMING CONVENTIONS**
+==================================================
+
+### Class, Struct, Method, Property, or Constant Field Naming
+
+* Prefer Pascal casing for naming classes, structs, methods, properties, or constant fields.
+
+### Interface Naming
+
+* Typically prefix interfaces with a capital letter "I".
+* Alternatively, use Pascal casing for interface names.
+
+### Method Argument, Private Field, and Local Variable Naming
+
+* Use camel case for naming method arguments, private fields, and local variables.
+* Prefix private fields with an underscore (_) character.
+
+### Naming Guidelines
+
+* Always use meaningful and self-explanatory names for your classes, methods, and properties.
+
+**KEYWORDS IN C#**
+=====================
+
+### Reserved Words
+
+* Predefined words reserved by the C# compiler.
+* Examples: `class`, `interface`, `namespace`, `public`, `private`
+* Cannot be used as identifiers.
+
+### Using Keywords as Identifiers
+
+* If you want to use a keyword as an identifier, prefix it with the `@` character.
+
+### Special Meaning in Code Context
+
+* These keywords have a special meaning within the context of your code.
