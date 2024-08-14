@@ -1,5 +1,9 @@
 # Introduction to C#
 
+* [Control Statements](./CONTROL-STATEMENTS.md)
+* [Strings](./STRINGS.md)
+* [Arrays](./ARRAYS.md)
+* [Methods](./METHODS.md)
 * [OOP in C#](./OOP.md)
   - [Introduction](./OOP.md)
   - [OOP by example](./oop.cs)
