@@ -145,5 +145,32 @@ namespace MidTestForm
         {
             Application.Exit();
         }
+
+        private void csvSave_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "CSV files (*.csv)|*.csv";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = new StreamWriter(sfd.FileName))
+                {
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            string[] data = {
+                        row.Cells[1].Value.ToString(),
+                        row.Cells[2].Value.ToString(),
+                        row.Cells[3].Value.ToString(),
+                        row.Cells[4].Value.ToString(),
+                        row.Cells[5].Value.ToString()
+                    };
+                            sw.WriteLine(string.Join(",", data));
+                        }
+                    }
+                }
+                MessageBox.Show("Data saved to CSV successfully!");
+            }
+        }
     }
 }
