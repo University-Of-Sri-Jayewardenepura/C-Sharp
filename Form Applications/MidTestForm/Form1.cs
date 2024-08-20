@@ -48,6 +48,7 @@ namespace MidTestForm
             cmd.Parameters.AddWithValue("LastName", txtLastName.Text);
             cmd.Parameters.AddWithValue("Email", txtEmail.Text);
             cmd.Parameters.AddWithValue("Phone", txtPhone.Text);
+            cmd.Parameters.AddWithValue("PhotoPath", employeeImage.ImageLocation);
 
         }
 
@@ -71,6 +72,7 @@ namespace MidTestForm
             txtLastName.Text = selectedRow.Cells[2].Value.ToString();
             txtEmail.Text = selectedRow.Cells[3].Value.ToString();
             txtPhone.Text = selectedRow.Cells[4].Value.ToString();
+            employeeImage.ImageLocation = selectedRow.Cells[5].Value.ToString();
 
         }
 
@@ -85,7 +87,7 @@ namespace MidTestForm
         {
             using (con = new SqlConnection(cs))
             {
-                cmd = new SqlCommand("INSERT INTO Employees (FirstName, LastName, Email, Phone) VALUES (@FirstName, @LastName, @Email, @Phone) ", con);
+                cmd = new SqlCommand("INSERT INTO Employees (FirstName, LastName, Email, Phone, PhotoPath) VALUES (@FirstName, @LastName, @Email, @Phone, @PhotoPath) ", con);
                 Parameters();
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -130,7 +132,7 @@ namespace MidTestForm
         {
             using (con = new SqlConnection(cs))
             {
-                cmd = new SqlCommand("UPDATE Employees SET FirstName=@FirstName, LastName=@LastName, Email=@Email, Phone=@Phone WHERE EmployeeID=@EmployeeID", con);
+                cmd = new SqlCommand("UPDATE Employees SET FirstName=@FirstName, LastName=@LastName, Email=@Email, Phone=@Phone, PhotoPath=@PhotoPath WHERE EmployeeID=@EmployeeID", con);
                 Parameters();
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -170,6 +172,16 @@ namespace MidTestForm
                     }
                 }
                 MessageBox.Show("Data saved to CSV successfully!");
+            }
+        }
+
+        private void imageButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                employeeImage.ImageLocation = ofd.FileName;
             }
         }
     }
