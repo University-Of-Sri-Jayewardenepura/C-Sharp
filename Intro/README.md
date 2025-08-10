@@ -7,6 +7,15 @@
 * [OOP in C#](./OOP.md)
   - [Introduction](./OOP.md)
   - [OOP by example](./oop.cs)
+* [Visual Programming Concepts](./VISUAL-PROGRAMMING.md)
+* [The .NET Framework / Platform](./DOTNET-FRAMEWORK.md)
+* [Visual Studio IDE Essentials](./VISUAL-STUDIO-IDE.md)
+* [Events & Delegates](./EVENTS.md)
+* [Exceptions](./EXCEPTIONS.md)
+* [Databases & CRUD Overview](./DATABASES.md)
+* [GUI & Windows Forms Fundamentals](./GUI-WINDOWS-FORMS.md)
+* [Menus, Reports & MDI](./MENUS-REPORTS-MDI.md)
+* [LINQ Basics](./LINQ.md)
 
 
 C# (pronounced "C sharp") is a modern, object-oriented programming language
