@@ -21,6 +21,26 @@ Foundational markdown lessons (all inside `Intro/`).
 - [Menus, Reports & MDI](./Intro/MENUS-REPORTS-MDI.md)
 - [LINQ Basics](./Intro/LINQ.md)
 
+<details>
+  <summary><strong>Intro to C# — By Example (Beginner)</strong></summary>
+
+  - 00 — Hello World + Program Structure: [00_HelloWorld.cs](./Intro/CSharp-Basics/00_HelloWorld.cs)
+  - 01 — Variables: [01_Variables.cs](./Intro/CSharp-Basics/01_Variables.cs)
+  - 02 — Data Types: [02_DataTypes.cs](./Intro/CSharp-Basics/02_DataTypes.cs)
+  - 03 — User Input: [03_UserInput.cs](./Intro/CSharp-Basics/03_UserInput.cs)
+  - 04 — Operators & Math: [04_OperatorsMath.cs](./Intro/CSharp-Basics/04_OperatorsMath.cs)
+  - 05 — Strings: [05_Strings.cs](./Intro/CSharp-Basics/05_Strings.cs)
+  - 06 — Booleans: [06_Booleans.cs](./Intro/CSharp-Basics/06_Booleans.cs)
+  - 07 — if..else: [07_IfElse.cs](./Intro/CSharp-Basics/07_IfElse.cs)
+  - 08 — switch: [08_Switch.cs](./Intro/CSharp-Basics/08_Switch.cs)
+  - 09 — while loop: [09_WhileLoop.cs](./Intro/CSharp-Basics/09_WhileLoop.cs)
+  - 10 — for loop: [10_ForLoop.cs](./Intro/CSharp-Basics/10_ForLoop.cs)
+  - 11 — break & continue: [11_BreakContinue.cs](./Intro/CSharp-Basics/11_BreakContinue.cs)
+  - 12 — arrays: [12_Arrays.cs](./Intro/CSharp-Basics/12_Arrays.cs)
+
+  See overview: [C# Basics — README](./Intro/CSharp-Basics/README.md)
+</details>
+
 ## 💻 Console Application Samples
 Scenario-based examples mapped to theory:
 
