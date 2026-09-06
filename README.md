@@ -61,13 +61,16 @@ Scenario-based examples mapped to theory:
 | Calculator | [MoreExamples/Calculator.cs](./Console%20Applications/MoreExamples/Calculator.cs) | IO, Methods, Control Flow |
 | StudentScores | [MoreExamples/StudentScores.cs](./Console%20Applications/MoreExamples/StudentScores.cs) | Collections, LINQ, File IO, CRUD |
 
-## �🖼 Windows Forms (Coming Soon)
+## 🖼 Windows Forms (Coming Soon)
 Planned examples to be added under `Form Applications/`:
 - Basic Form + Events (Button / TextBox validation)
 - Calculator GUI (mirrors console version)
 - CRUD with DataGridView (in-memory then DB)
 - MDI Parent with Menus
 - Crystal Report placeholder / conceptual notes
+
+## 🌟 Student Samples
+Curated real-world student projects and architecture showcases: see [`Samples/`](./Samples/).
 
 ## 🗂 Suggested Progress Path
 1. Read Intro overview & syntax basics.
@@ -79,6 +82,7 @@ Planned examples to be added under `Form Applications/`:
 7. Add error handling (Exceptions sample).
 8. Build CRUD; prepare for persistence / DB.
 9. Transition to GUI (Forms) once fundamentals are solid.
+10. Study the [Student Project Showcase](./Samples/README.md) to see how large-scale C# applications are architected.
 
 ## 🧪 How to Run Samples
 For quick compile (no .csproj yet) ensure you have .NET SDK & Mono for execution without project files, or convert each folder into a project:
@@ -88,7 +92,7 @@ For quick compile (no .csproj yet) ensure you have .NET SDK & Mono for execution
 dotnet new console -n SampleTemp
 mv Program.cs SampleTemp/Program.cs
 cd SampleTemp
- dotnet run
+dotnet run
 ```
 
 Or using csc + mono on macOS:
@@ -100,6 +104,7 @@ csc Program.cs && mono Program.exe
 - Keep theory in `Intro/`
 - Keep console examples in `Console Applications/`
 - Keep forms examples in `Form Applications/`
+- Submit full-stack / architecture showcase applications to `Samples/` (see [Submission Guidelines](./Samples/README.md#submission-guidelines-how-to-get-your-project-featured))
 - Each new example: its own folder + README + `Program.cs`
 
 ## ✅ Roadmap
@@ -110,6 +115,7 @@ csc Program.cs && mono Program.exe
 - [x] Menus & MDI markdown
 - [x] LINQ basics markdown
 - [x] Combined examples folder
+- [x] Student project showcase & architecture samples catalog
 - [ ] Persist CRUD to file/JSON sample
 - [ ] Database connectivity sample (ADO.NET + SQLite)
 - [ ] WinForms basic form sample
